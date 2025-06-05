@@ -1,0 +1,8 @@
+#!/bin/bash
+
+apt update
+apt-get install -y nginx 
+cd /var/www/html
+mkdir  blue
+
+echo "this is $(hostname) code blue">/var/www/html/blue/index.nginx-debian.html

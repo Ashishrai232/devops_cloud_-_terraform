@@ -1,0 +1,41 @@
+task:
+1. Deploy a web application on Amazon EC2 instances.
+2. Set up an Application Load Balancer (ALB) to distribute traffic.
+3. Configure an Auto Scaling Group (ASG) to dynamically adjust the number of instances based on resource usage (e.g., CPU utilization).
+4. Test the scaling behavior by simulating traffic loads.
+
+__________________________________________________________________________________
+task 1 - 
+    web application is achieved through 
+        1.install nginx
+        2.start service
+        3.change the index.html @/var/www/html/index.nginx-debian.html
+
+
+since this process will be repeated , it is best to create a user-data file 
+
+    
+
+task 2-
+    setting up a application load Balancer
+
+
+
+        1. customized security group as we need to expose only 80 and 22 port.
+
+            this sg will be added as such only load balancer can access 
+
+            how--
+                add the alb security group in inbound functions of ec2
+
+        1.target group creation
+
+            -red -1 ec2   containing welcome
+            -blue --2 ec2 containing jai mata di
+
+        
+        2.add them to alb
+
+task 3
+
+    
